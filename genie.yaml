@@ -1,0 +1,292 @@
+name: genie
+label: Genie
+description: Mystical djinn theme with blue and gold accents, smoke wisps.
+
+palette:
+  background:
+    hex: "#0a1428"
+    alpha: 1.0
+  midground: "#e8d5b7"
+  foreground:
+    hex: "#f4d03f"
+    alpha: 0.95
+  warmGlow: "rgba(255, 215, 0, 0.25)"
+  noiseOpacity: 0.4
+
+
+typography:
+  fontSans: '"Cinzel", "Playfair Display", Georgia, serif'
+  fontMono: '"JetBrains Mono", "Fira Code", monospace'
+  fontDisplay: '"Cinzel", serif'
+  fontUrl: "https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+  baseSize: "15px"
+  lineHeight: "1.6"
+  letterSpacing: "0.02em"
+
+layout:
+  radius: "0.5rem"
+  density: comfortable
+
+colorOverrides:
+  primary: "#f4d03f"
+  primaryForeground: "#0a1428"
+  accent: "#4fc3f7"
+  ring: "#4fc3f7"
+  border: "rgba(79, 195, 247, 0.25)"
+  secondary: "#1565c0"
+  muted: "rgba(244, 208, 63, 0.15)"
+  mutedForeground: "#90caf9"
+
+customCSS: |
+  :root {
+    --smoke-img: url("data:image/png;base64,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");
+  }
+  
+  /* Golden glow on primary elements */
+  .btn-primary, [data-state="selected"] {
+    box-shadow: 0 0 20px rgba(244, 208, 63, 0.4),
+              inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Subtle shimmer on cards */
+  .card {
+    background: linear-gradient(
+      135deg,
+      rgba(10, 20, 40, 0.9) 0%,
+      rgba(21, 101, 192, 0.15) 50%,
+      rgba(10, 20, 40, 0.9) 100%
+    );
+  }
+  
+  /* Golden text glow */
+  h1, h2, h3, .font-display {
+    text-shadow: 0 0 30px rgba(244, 208, 63, 0.3);
+  }
+  
+  /* Floating animation */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+  
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  /* Randomized smoke wisps - 3 positions, varying sizes by ±20% */
+  
+  /* Smoke wisp 1 - left position, base size 250px */
+  body::before {
+    content: "";
+    position: fixed;
+    bottom: -200px;
+    left: 12%;
+    width: 250px;
+    height: 250px;
+    margin-left: -125px;
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0;
+    background: var(--smoke-img) no-repeat center;
+    background-size: contain;
+    filter: hue-rotate(160deg) brightness(1.8) saturate(1.5);
+    animation: smokeRise1 6s ease-in infinite;
+    animation-delay: 0s;
+  }
+  
+  /* Smoke wisp 2 - center-right position, 20% larger (300px) */
+  body::after {
+    content: "";
+    position: fixed;
+    bottom: -200px;
+    left: 45%;
+    width: 300px;
+    height: 300px;
+    margin-left: -150px;
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0;
+    background: var(--smoke-img) no-repeat center;
+    background-size: contain;
+    filter: sepia(1) saturate(3) brightness(1.2);
+    animation: smokeRise2 7s ease-in infinite;
+    animation-delay: -3s;
+  }
+  
+  /* Additional randomized smoke wisps via real DOM elements */
+  /* Target header, aside, footer - each gets ::before and ::after for smoke */
+
+  header::after {
+    content: "";
+    position: fixed;
+    bottom: -200px;
+    left: 25%;
+    width: 220px;
+    height: 220px;
+    margin-left: -110px;
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0;
+    background: var(--smoke-img) no-repeat center;
+    background-size: contain;
+    filter: sepia(0.8) saturate(2) brightness(1.3);
+    animation: smokeRise3 6s ease-in infinite;
+    animation-delay: -2.5s;
+  }
+
+  aside::before {
+    content: "";
+    position: fixed;
+    bottom: -200px;
+    left: 60%;
+    width: 280px;
+    height: 280px;
+    margin-left: -140px;
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0;
+    background: var(--smoke-img) no-repeat center;
+    background-size: contain;
+    filter: hue-rotate(200deg) brightness(1.6) saturate(1.3);
+    animation: smokeRise4 7s ease-in infinite;
+    animation-delay: -4s;
+  }
+
+  aside::after {
+    content: "";
+    position: fixed;
+    bottom: -200px;
+    left: 78%;
+    width: 240px;
+    height: 240px;
+    margin-left: -120px;
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0;
+    background: var(--smoke-img) no-repeat center;
+    background-size: contain;
+    filter: hue-rotate(140deg) brightness(1.7) saturate(1.4);
+    animation: smokeRise5 6.5s ease-in infinite;
+    animation-delay: -3.5s;
+  }
+
+
+  @keyframes smokeRise2 {
+    0% {
+      opacity: 0;
+      bottom: -200px;
+      transform: scale(1) rotateZ(0deg);
+    }
+    15% {
+      opacity: 0.9;
+    }
+    50% {
+      opacity: 0.6;
+    }
+    90% {
+      bottom: 65%;
+      opacity: 0.3;
+      transform: scale(2.5) rotateZ(15deg);
+    }
+    100% {
+      bottom: 70%;
+      opacity: 0;
+      transform: scale(3) rotateZ(20deg);
+    }
+  }
+
+  @keyframes smokeRise1 {
+    0% {
+      opacity: 0;
+      bottom: -200px;
+      transform: scale(1) rotateZ(0deg);
+    }
+    15% {
+      opacity: 0.9;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    90% {
+      bottom: 65%;
+      opacity: 0.4;
+      transform: scale(2.7) rotateZ(18deg);
+    }
+    100% {
+      bottom: 70%;
+      opacity: 0;
+      transform: scale(3) rotateZ(20deg);
+    }
+  }
+
+  @keyframes smokeRise3 {
+    0% {
+      opacity: 0;
+      bottom: -200px;
+      transform: scale(1) rotateZ(0deg);
+    }
+    15% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 0.6;
+    }
+    90% {
+      bottom: 60%;
+      opacity: 0.3;
+      transform: scale(2.2) rotateZ(-10deg);
+    }
+    100% {
+      bottom: 65%;
+      opacity: 0;
+      transform: scale(2.6) rotateZ(-15deg);
+    }
+  }
+
+  @keyframes smokeRise4 {
+    0% {
+      opacity: 0;
+      bottom: -200px;
+      transform: scale(1) rotateZ(0deg);
+    }
+    15% {
+      opacity: 0.85;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    90% {
+      bottom: 55%;
+      opacity: 0.2;
+      transform: scale(2.8) rotateZ(25deg);
+    }
+    100% {
+      bottom: 60%;
+      opacity: 0;
+      transform: scale(3.2) rotateZ(30deg);
+    }
+  }
+
+  @keyframes smokeRise5 {
+    0% {
+      opacity: 0;
+      bottom: -200px;
+      transform: scale(1) rotateZ(0deg);
+    }
+    15% {
+      opacity: 0.95;
+    }
+    50% {
+      opacity: 0.65;
+    }
+    90% {
+      bottom: 70%;
+      opacity: 0.35;
+      transform: scale(2.3) rotateZ(-20deg);
+    }
+    100% {
+      bottom: 75%;
+      opacity: 0;
+      transform: scale(2.5) rotateZ(-25deg);
+    }
+  }
