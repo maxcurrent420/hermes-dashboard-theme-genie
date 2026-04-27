@@ -2,7 +2,8 @@
 
 A djinn-themed dashboard theme for Hermes Agent with blue and gold accents, and animated smoke wisps.
 
-<img width="1737" height="890" alt="Screenshot from 2026-04-25 23-09-34" src="https://github.com/user-attachments/assets/2f2f847c-079f-4c3e-882f-bd20422596f8" />
+<img width="1737" height="890" alt="Screenshot from 2026-04-26 23-09-34" src="<img width="1884" height="941" alt="image" src="https://github.com/user-attachments/assets/7ba2c2f8-4aea-40ea-b58e-4b05d1e9ea84" />
+" />
 
 
 ## Features
